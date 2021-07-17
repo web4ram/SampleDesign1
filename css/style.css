@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.clr{
+    clear: both;
+}
+a:hover{
+    text-decoration: none;
+    color: #000;
+}
+img{
+    max-width: 100%;
+}
+/* font-family: 'Open Sans', sans-serif; */
+
+.header{
+    background-color: #000;
+    color: #fff;
+}
+
+.header .navbar-nav .nav-item{
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    display: block;
+    margin: 0 16px;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+}
+.header .navbar-nav .nav-item::before{
+    content: "";
+    background-color: #ac29fe;
+    height: 3px;
+    width: 0%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+}
+.header .navbar-nav .nav-item:hover::before{
+    width: 100%;
+}
+.header .navbar-nav .nav-item:hover{
+    color: #48c7ec;
+}
+.header .user{
+    margin-left: 3rem;
+}
+.banner{
+    background-image: url(../images/banner_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 80px 0;
+}
+.banner .intro{
+    margin: 15px 0;
+}
+.banner .intro h3{
+    color: #fff;
+    font-size: 64px;
+    font-weight: 300;
+    margin-bottom: 0;
+    line-height: 1;
+}
+.banner .intro h1{
+    font-size: 64px;
+    font-weight: 600;
+    margin-bottom: 0;
+    line-height: 1;
+    color: #d474ff;
+}
+.banner .intro p{
+    color: #b4b4b4;
+    font-size: 17px;
+    letter-spacing: -0.5px
+}
+.banner .intro .cta{
+    background-color: #48c7ec;
+    width: 190px;
+    height: 48px;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.action-button {
+   margin-top: 20px;
+   background-color: #fff;
+   display: inline-block;
+   border-radius: 30px; 
+}
+.action-button span.button-wrapper {
+  border: 1px solid rgb(144,47,253);
+  border-radius: 30px;
+  display: inline-block;
+  padding: 2px; 
+  background: rgb(144,47,253);
+  background: linear-gradient(90deg, rgba(144,47,253,1) 0%, rgba(68,163,238,1) 100%);
+}
+  
+.action-button span:not(.arrow) {
+  display: inline-block;
+  transition: 0.5s;
+  line-height: 1.6rem; 
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+}
+.action-button span.arrow {
+    font-size: 17px;
+    font-weight: bold;
+    display: inline-block;
+    color: #fff;
+    margin-right: 10px;
+}
+@media (min-width: 767px) {
+  .action-button .no-text span:not(.arrow) {
+    display: none; 
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 16px;
+    color: #fff;
+} 
+}
+.action-button .btn {
+  min-width: 36px;
+  height: 36px;
+  display: flex;
+  transition: 0.3s; 
+}
+.action-button .btn:not(.no-text) {
+  padding: 5px 16px; 
+}
+.action-button:hover .btn {
+    padding: 6px 16px;
+    background: transparent;
+    border-color: transparent;
+}
+.action-button:hover .no-text > span:not(.arrow) {
+  display: inline-block; 
+  transition: 0.5s; 
+  transition: ease-in 0.5s;
+}
+.action-button:hover span.button-wrapper {
+  border: 1px solid rgb(144,47,253); 
+  transition: 0.5s; 
+  transition: ease-in 0.5s;
+}
+
+.banner .tracks .track_btn{
+    border: 1.5px solid #ac29fe;
+    border-radius: 10px;
+    width: 362px;
+    height: 78px;
+    margin-bottom: 13px;
+    display: flex;
+    align-items: center;
+}
+.banner .tracks .track_btn a{
+    color: #a63aea;
+    display: block;
+    border: 1px solid #a63aea;
+    padding: 0px 7px;
+    border-radius: 5px;
+    font-size: 22px;
+    line-height: 1;
+    margin-left: auto;
+    margin-right: 22px;  
+}
+.banner .tracks .track_btn span{
+    font-size: 19px;
+    color: #fff;
+}
+.banner .tracks .track_btn img{
+    margin: 0 35px;
+}
+.banner:hover .action-button span:not(.arrow) {
+    display: block;
+    transition: .9s
+}
+.my_tack{
+    background-color: #000;
+    color: #fff;
+    padding: 27px 0;
+}
+.track_fltr h2{
+    font-size: 42px;
+    line-height: 1;
+    float: left;
+}
+.track_fltr h2 span{
+    color: #cf61ff;
+}
+.track_fltr a{
+    float: right;
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 2.4;
+}
+.track_fltr a span{
+    font-weight: 600;
+    font-size: 21px;
+}
+.track_fltr a i{
+    font-weight: 100;
+    border: 2px solid #b255dc;
+    color: #b255dc;
+    padding: 3px;
+    border-radius: 50%;
+    margin-left: 17px;
+    vertical-align: super;
+}
+.my_tack .row{
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+.track_fltr{
+    overflow: hidden;
+}
+.track_grid{
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 262px;
+    position: relative;
+}
+.track_grid span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    display: inline-block;
+    line-height: 2;
+    padding: 0 12px;
+    border-radius: 5px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.track_grid .play_btn{
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    height: 70px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+}
+.track_grid .play_btn .play_icon i{
+    border: 3px solid #fff;
+    border-radius: 50%;
+    padding: 6px 6px 6px 8px;
+}
+.track_grid .play_btn .play_track{
+    margin-left: 10px;
+}
+.track_grid .play_btn .play_track p{
+    margin-bottom: 0;
+    line-height: 1;
+}
+.content_dtl{
+    background-color: #000;
+    padding: 45px 0;
+}
+
+.content_text h4{
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #f5a2ff;
+    margin-bottom: 6px;
+}
+.content_text h2{
+    font-size: 42px;
+    line-height: 1;
+    color: #fff;
+    margin-bottom: 28px;
+}
+.content_text p{
+    font-size: 21px;
+    color: #dbdbdb;
+    font-weight: 300;
+    line-height: 1.2;
+    
+}
+
+
+@media only screen and (max-width: 767px) {
+    .container{
+        max-width: 100%;
+    }
+    .header {
+        background-color: #fff;
+        color: #000;
+    }
+    .header .navbar-nav .nav-item {
+        color: #000;
+        font-weight: 600;
+    }
+    .header .user{
+        margin-left: 16px;
+    }
+    .banner .tracks .track_btn{
+        width: 100%;
+    }
+    .track_grid {
+        border-radius: 0 0 10px 10px;
+        background-size: cover;
+    }
+    .banner .intro h3{
+        font-size: 52px;
+    }
+
+    .banner .intro h1{
+        font-size: 52px;
+    }
+    .track_grid .play_btn {
+        bottom: 0;
+    }
+
+
+
+  }
